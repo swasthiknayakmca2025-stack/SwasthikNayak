@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Swasthik Nayak | Software Engineer & Full-Stack Developer Portfolio</title>
+  <meta name="title" content="Swasthik Nayak | Software Engineer & Full-Stack Developer Portfolio" />
+  <meta name="description" content="Portfolio of Swasthik Nayak - MCA Candidate at Poornaprajna Institute of Management (PIM), IIT Kharagpur Elite Medalist in DSA, and Full-Stack Web Developer." />
+  <meta name="keywords" content="Swasthik Nayak, Portfolio, MCA, Poornaprajna Institute of Management, Full Stack Developer, Python DSA IIT Kharagpur, Web Development Intern, Restaurant Management System" />
+  <meta name="author" content="Swasthik Nayak" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Swasthik Nayak | Software Engineer & Full-Stack Developer" />
+  <meta property="og:description" content="MCA candidate, IIT Kharagpur NPTEL Elite Medalist in DSA, and Full-Stack Developer. Explore projects, interactive live demo, skills, and resume." />
+  <meta property="og:image" content="assets/swasthik-profile.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/swasthik-profile.png" />
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Background Ambient Glow Canvas -->
+  <canvas id="ambient-canvas" class="ambient-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" id="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Swasthik</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+          <li><a href="#experience" class="nav-link" id="link-experience">Experience</a></li>
+          <li><a href="#certifications" class="nav-link" id="link-certifications">Certifications</a></li>
+          <li><a href="#education" class="nav-link" id="link-education">Education</a></li>
+          <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Terminal launcher button -->
+        <button id="terminal-trigger-btn" class="nav-icon-btn" title="Open Interactive Terminal (Ctrl + K)" aria-label="Open Interactive Terminal">
+          <i class="fa-solid fa-terminal"></i>
+          <span class="kbd-badge">Ctrl K</span>
+        </button>
+
+        <!-- Sound FX toggle button -->
+        <button id="sound-toggle-btn" class="nav-icon-btn" title="Toggle Sound FX" aria-label="Toggle Sound Effects">
+          <i class="fa-solid fa-volume-high" id="sound-icon"></i>
+        </button>
+
+        <!-- Theme toggle button -->
+        <button id="theme-toggle-btn" class="nav-icon-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Resume CTA button -->
+        <a href="#resume-section" class="btn btn-outline btn-sm nav-resume-btn" id="nav-resume-cta">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-status-pill" data-aos="fade-down">
+            <span class="status-indicator">
+              <span class="status-ping"></span>
+              <span class="status-core"></span>
+            </span>
+            <span class="status-text">Available for Software Engineer Roles &amp; MCA Internships</span>
+          </div>
+
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Hello, I'm <br />
+            <span class="gradient-text gradient-glow">Swasthik Nayak</span>
+          </h1>
+
+          <div class="hero-typewriter-container" data-aos="fade-up" data-aos-delay="200">
+            <span class="typewriter-prefix">I am a </span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+            Ambitious MCA candidate at <strong>Poornaprajna Institute of Management (PIM)</strong> with strong Computer Science fundamentals and an <strong>IIT Kharagpur Elite Medal</strong> in Data Structures &amp; Algorithms. Passionate about building robust full-stack applications, scalable backend architectures, and delightful user interfaces.
+          </p>
+
+          <div class="hero-stats-grid" data-aos="fade-up" data-aos-delay="350">
+            <div class="hero-stat-card">
+              <span class="stat-number">Elite</span>
+              <span class="stat-label">IIT Kharagpur DSA Medalist</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="stat-number">MCA '27</span>
+              <span class="stat-label">PIM Udupi Candidate</span>
+            </div>
+            <div class="hero-stat-card">
+              <span class="stat-number">3 Years</span>
+              <span class="stat-label">Cultural Secretary Leadership</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group" data-aos="fade-up" data-aos-delay="400">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-explore">
+              <span>View Featured Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <button class="btn btn-glass" id="open-resume-modal-btn">
+              <i class="fa-solid fa-eye"></i>
+              <span>View Resume</span>
+            </button>
+            <a href="#contact" class="btn btn-ghost" id="hero-btn-contact">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-social-row" data-aos="fade-up" data-aos-delay="500">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-icons">
+              <a href="mailto:swasthiknayak09@gmail.com" class="social-link" title="Email Swasthik" aria-label="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+918197194701" class="social-link" title="Call Swasthik" aria-label="Call Mobile">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <a href="https://wa.me/918197194701?text=Hi%20Swasthik,%20I%20viewed%20your%20portfolio!" target="_blank" rel="noopener noreferrer" class="social-link whatsapp-link" title="WhatsApp Chat" aria-label="WhatsApp Message">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+          <div class="profile-card-3d" id="profile-card-3d">
+            <div class="card-glow-bg"></div>
+            <div class="card-inner-frame">
+              <div class="profile-img-box">
+                <img src="assets/swasthik-profile.png" alt="Swasthik Nayak Profile Photo" class="profile-photo" id="hero-profile-img" />
+                <div class="profile-badge-overlay">
+                  <span class="badge-icon">🎓</span>
+                  <div class="badge-text">
+                    <strong>MCA Candidate</strong>
+                    <small>Poornaprajna (PIM)</small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Interactive Badges -->
+              <div class="floating-badge badge-top-right">
+                <span class="f-icon">🏅</span>
+                <div class="f-info">
+                  <strong>IIT Kharagpur</strong>
+                  <span>Elite Medal in DSA</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <span class="f-icon">⚡</span>
+                <div class="f-info">
+                  <strong>Full-Stack RMS</strong>
+                  <span>RBAC &amp; Real-Time</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <span class="f-icon">🌟</span>
+                <div class="f-info">
+                  <strong>3 Years Leader</strong>
+                  <span>Cultural Secretary</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll down indicator -->
+      <a href="#about" class="scroll-down-hint" aria-label="Scroll down to About section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="mouse-label">Explore More</span>
+      </a>
+    </section>
+
+    <!-- QUICK TERMINAL BANNER / COMMAND BAR -->
+    <section class="command-bar-section">
+      <div class="container">
+        <div class="command-bar-card" id="open-terminal-card-btn">
+          <div class="command-bar-left">
+            <span class="cmd-icon"><i class="fa-solid fa-terminal"></i></span>
+            <span class="cmd-text">Interactive Recruiter CLI: Press <kbd>Ctrl</kbd> + <kbd>K</kbd> or click here to run commands like <code>skills</code>, <code>projects</code>, <code>certifications</code></span>
+          </div>
+          <span class="cmd-action-tag">Open CLI <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-regular fa-user"></i> GET TO KNOW ME</span>
+          <h2 class="section-title">Bridging Foundations with <span class="gradient-text">Modern Innovation</span></h2>
+          <p class="section-desc">From algorithmic problem solving to building scalable full-stack web applications, here is a snapshot of my journey.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Narrative -->
+          <div class="about-story-card glass-panel" data-aos="fade-right">
+            <div class="card-accent-bar"></div>
+            <h3 class="story-title">About Swasthik Nayak</h3>
+            
+            <p class="story-para">
+              I am an ambitious <strong>MCA candidate at Poornaprajna Institute of Management (PIM), Udupi</strong> (2025–2027), having earned my <strong>Bachelor of Computer Science</strong> from <strong>Alvas Degree College, Moodubidre</strong> (2023–2025).
+            </p>
+            <p class="story-para">
+              My drive lies in understanding how modern software systems scale from core computer science principles. Having earned the <strong>Elite Medal in Data Structures and Algorithms in Python from IIT Kharagpur (NPTEL)</strong>, I combine algorithmic discipline with modern frontend frameworks and responsive UI design.
+            </p>
+            <p class="story-para">
+              Beyond engineering, I served for <strong>3 years as the Cultural Secretary</strong> at Alvas, coordinating large-scale events, managing team dynamics, and honing effective communication. I also dedicated a year as an <strong>NSS Volunteer</strong>, reinforcing my commitment to teamwork and community responsibility.
+            </p>
+
+            <div class="key-highlights-grid">
+              <div class="highlight-item">
+                <div class="hl-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="hl-content">
+                  <h4>Clean Code &amp; Algorithms</h4>
+                  <p>Certified by IIT Kharagpur with elite proficiency in Python data structures and algorithmic complexity.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="hl-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="hl-content">
+                  <h4>Full-Stack Capabilities</h4>
+                  <p>Experienced in frontend engineering (HTML5/CSS3/JS), backend logic, and Role-Based Access Control.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="hl-icon"><i class="fa-solid fa-users"></i></div>
+                <div class="hl-content">
+                  <h4>Leadership &amp; Execution</h4>
+                  <p>3-year track record as Cultural Secretary leading multidisciplinary teams and organizing campus-wide events.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Personal Details & Fast Facts -->
+          <div class="about-meta-column" data-aos="fade-left">
+            <div class="personal-details-card glass-panel">
+              <h3 class="panel-heading"><i class="fa-solid fa-id-card"></i> Personal Details &amp; Profile</h3>
+              
+              <ul class="meta-list">
+                <li class="meta-item">
+                  <span class="meta-icon"><i class="fa-solid fa-cake-candles"></i></span>
+                  <div class="meta-data">
+                    <span class="meta-key">Date of Birth</span>
+                    <span class="meta-val">22-03-2004</span>
+                  </div>
+                </li>
+                <li class="meta-item">
+                  <span class="meta-icon"><i class="fa-solid fa-flag"></i></span>
+                  <div class="meta-data">
+                    <span class="meta-key">Nationality</span>
+                    <span class="meta-val">Indian</span>
+                  </div>
+                </li>
+                <li class="meta-item">
+                  <span class="meta-icon"><i class="fa-solid fa-location-dot"></i></span>
+                  <div class="meta-data">
+                    <span class="meta-key">Location</span>
+                    <span class="meta-val">Karkala, Udupi, Karnataka, India</span>
+                  </div>
+                </li>
+                <li class="meta-item">
+                  <span class="meta-icon"><i class="fa-solid fa-map-pin"></i></span>
+                  <div class="meta-data">
+                    <span class="meta-key">Address</span>
+                    <span class="meta-val">Mahalaxmi Nilaya, Ashwattakatte Near Govt School, Durga Tellaru, Karkala, Udupi</span>
+                  </div>
+                </li>
+                <li class="meta-item">
+                  <span class="meta-icon"><i class="fa-solid fa-envelope"></i></span>
+                  <div class="meta-data">
+                    <span class="meta-key">Email</span>
+                    <a href="mailto:swasthiknayak09@gmail.com" class="meta-link">swasthiknayak09@gmail.com</a>
+                  </div>
+                </li>
+                <li class="meta-item">
+                  <span class="meta-icon"><i class="fa-solid fa-phone"></i></span>
+                  <div class="meta-data">
+                    <span class="meta-key">Phone</span>
+                    <a href="tel:+918197194701" class="meta-link">+91 8197194701</a>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Languages Multilingual Matrix -->
+              <div class="languages-box">
+                <h4 class="sub-heading"><i class="fa-solid fa-language"></i> Languages Known</h4>
+                <div class="lang-pills">
+                  <span class="lang-pill"><i class="fa-solid fa-check-circle"></i> English <span>(Fluent)</span></span>
+                  <span class="lang-pill"><i class="fa-solid fa-check-circle"></i> Kannada <span>(Native)</span></span>
+                  <span class="lang-pill"><i class="fa-solid fa-check-circle"></i> Tulu <span>(Native)</span></span>
+                  <span class="lang-pill"><i class="fa-solid fa-check-circle"></i> Hindi <span>(Conversational)</span></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download CV / Quick Action card -->
+            <div class="resume-cta-card glass-panel">
+              <div class="resume-cta-inner">
+                <div class="resume-icon-circle">
+                  <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <div class="resume-cta-info">
+                  <h4>Curriculum Vitae</h4>
+                  <p>Verified resume with complete academic and project records.</p>
+                </div>
+              </div>
+              <div class="resume-btn-group">
+                <a href="assets/swasthik-resume.pdf" download="Swasthik_Nayak_Resume.pdf" class="btn btn-primary btn-sm" id="download-cv-btn">
+                  <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+                <button class="btn btn-outline btn-sm" id="about-view-resume-btn">
+                  <i class="fa-solid fa-eye"></i> View PDF
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-solid fa-code"></i> TECHNICAL &amp; PROFESSIONAL ARSENAL</span>
+          <h2 class="section-title">Core Skills &amp; <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-desc">Combining algorithmic problem solving with full-stack development, modern databases, and strong team execution.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-tabs" data-aos="fade-up">
+          <button class="tab-btn active" data-filter="all">All Skills</button>
+          <button class="tab-btn" data-filter="core">CS &amp; Languages</button>
+          <button class="tab-btn" data-filter="web">Web &amp; Frontend</button>
+          <button class="tab-btn" data-filter="systems">Systems &amp; Database</button>
+          <button class="tab-btn" data-filter="soft">Leadership &amp; Soft Skills</button>
+        </div>
+
+        <div class="skills-cards-grid" id="skills-grid">
+          <!-- Python & DSA -->
+          <div class="skill-card glass-panel" data-category="core" data-aos="fade-up">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap python-color"><i class="fa-brands fa-python"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">Python &amp; DSA</h4>
+                <span class="skill-badge gold-badge">IIT KGP Elite Medalist</span>
+              </div>
+            </div>
+            <p class="skill-desc">Data Structures, Algorithms, Tree traversals, Graph algorithms, sorting, OOP principles, and clean Python scripting.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 95%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>IIT Kharagpur</span>
+              <span>Algorithms</span>
+              <span>OOP</span>
+              <span>Python 3</span>
+            </div>
+          </div>
+
+          <!-- JavaScript (ES6+) -->
+          <div class="skill-card glass-panel" data-category="core web" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap js-color"><i class="fa-brands fa-js"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">JavaScript (ES6+)</h4>
+                <span class="skill-badge">Core Frontend</span>
+              </div>
+            </div>
+            <p class="skill-desc">DOM manipulation, Async/Await, Fetch API, modern ES6+ syntax, client-side state management, and event handling.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>ES6+</span>
+              <span>DOM</span>
+              <span>Async JS</span>
+              <span>JSON</span>
+            </div>
+          </div>
+
+          <!-- HTML5 & CSS3 -->
+          <div class="skill-card glass-panel" data-category="web" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap html-color"><i class="fa-brands fa-html5"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">HTML5 &amp; Modern CSS3</h4>
+                <span class="skill-badge">UI Architecture</span>
+              </div>
+            </div>
+            <p class="skill-desc">Semantic HTML5, CSS Grid, Flexbox, responsive layouts, glassmorphism, micro-animations, and CSS variables design systems.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 92%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Responsive Design</span>
+              <span>CSS Grid</span>
+              <span>Flexbox</span>
+              <span>Glassmorphism</span>
+            </div>
+          </div>
+
+          <!-- UI/UX & Responsive Web Design -->
+          <div class="skill-card glass-panel" data-category="web" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap ui-color"><i class="fa-solid fa-palette"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">UI / UX Design</h4>
+                <span class="skill-badge">Internship Experience</span>
+              </div>
+            </div>
+            <p class="skill-desc">Knowledge of modern interface design, user journey mapping, typography hierarchy, accessibility, and interactive design prototypes.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 88%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>UI Design</span>
+              <span>Wireframing</span>
+              <span>Visual Flow</span>
+              <span>Accessibility</span>
+            </div>
+          </div>
+
+          <!-- Role-Based Access Control (RBAC) & Backend Logic -->
+          <div class="skill-card glass-panel" data-category="systems" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap rbac-color"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">RBAC &amp; Systems Logic</h4>
+                <span class="skill-badge">Architecture</span>
+              </div>
+            </div>
+            <p class="skill-desc">Multi-tenant role permissions (Admin, Waiter, Kitchen Staff), secure session handling, authorization checkpoints, and order workflows.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 89%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Role Permissions</span>
+              <span>Auth Workflow</span>
+              <span>Business Logic</span>
+            </div>
+          </div>
+
+          <!-- Database Management Systems -->
+          <div class="skill-card glass-panel" data-category="systems core" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap db-color"><i class="fa-solid fa-database"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">Database Systems (DBMS)</h4>
+                <span class="skill-badge">Backend Data</span>
+              </div>
+            </div>
+            <p class="skill-desc">Relational schema design, SQL queries, normalization, table constraints, transaction management, and automated GST billing records.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 86%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>SQL</span>
+              <span>Schema Design</span>
+              <span>Relational DB</span>
+              <span>CRUD</span>
+            </div>
+          </div>
+
+          <!-- Problem Solving & Algorithmic Rigor -->
+          <div class="skill-card glass-panel" data-category="core soft" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap problem-color"><i class="fa-solid fa-brain"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">Problem Solving &amp; Adaptability</h4>
+                <span class="skill-badge">Core Strength</span>
+              </div>
+            </div>
+            <p class="skill-desc">Analytical troubleshooting, quick conceptual absorption, modular debugging, and structured step-by-step problem deconstruction.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 94%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Analytical Thinking</span>
+              <span>Debugging</span>
+              <span>Fast Learner</span>
+            </div>
+          </div>
+
+          <!-- Leadership, Teamwork & Event Coordination -->
+          <div class="skill-card glass-panel" data-category="soft" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap leader-color"><i class="fa-solid fa-people-roof"></i></div>
+              <div class="skill-meta">
+                <h4 class="skill-title">Leadership &amp; Team Management</h4>
+                <span class="skill-badge">3 Yrs Cultural Sec</span>
+              </div>
+            </div>
+            <p class="skill-desc">Elected Cultural Secretary for 3 consecutive years; led cross-functional teams, conflict resolution, time management, and NSS volunteering.</p>
+            <div class="skill-progress-bar">
+              <div class="progress-fill" style="width: 96%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Teamwork</span>
+              <span>Time Management</span>
+              <span>Event Logistics</span>
+              <span>NSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-solid fa-laptop-code"></i> PRACTICAL ENGINEERING</span>
+          <h2 class="section-title">Featured Project: <span class="gradient-text">Restaurant Management System (RMS)</span></h2>
+          <p class="section-desc">A full-stack, enterprise-grade restaurant operational platform with real-time table booking, order management pipeline, automated GST billing, and RBAC.</p>
+        </div>
+
+        <!-- Featured Project Showcase Card -->
+        <div class="project-flagship-card glass-panel" data-aos="zoom-in">
+          <div class="flagship-media-wrapper">
+            <img src="assets/rms-preview.jpg" alt="Restaurant Management System (RMS) Dashboard Showcase" class="flagship-img" />
+            <div class="project-status-tag">
+              <i class="fa-solid fa-check-circle"></i> Production Ready Architecture
+            </div>
+          </div>
+
+          <div class="flagship-details">
+            <div class="flagship-badge-row">
+              <span class="tech-pill"><i class="fa-solid fa-server"></i> Full-Stack Application</span>
+              <span class="tech-pill"><i class="fa-solid fa-shield-halved"></i> Role-Based Access Control</span>
+              <span class="tech-pill"><i class="fa-solid fa-clock"></i> Real-Time Order Tracking</span>
+              <span class="tech-pill"><i class="fa-solid fa-calculator"></i> Automated GST Billing</span>
+            </div>
+
+            <h3 class="flagship-title">DineFlow: Restaurant Management System (RMS)</h3>
+            <p class="flagship-summary">
+              Designed and built an end-to-end management solution to streamline restaurant floor operations, kitchen pipelines, and financial reconciliations. Built with a high-performance responsive frontend, modular backend logic, and dynamic role permissions.
+            </p>
+
+            <div class="flagship-features-grid">
+              <div class="feat-box">
+                <div class="feat-icon"><i class="fa-solid fa-chair"></i></div>
+                <div class="feat-info">
+                  <h4>Interactive Table Reservations</h4>
+                  <p>Real-time visual floor plan toggling between Available, Reserved, and Occupied statuses.</p>
+                </div>
+              </div>
+              <div class="feat-box">
+                <div class="feat-icon"><i class="fa-solid fa-kitchen-set"></i></div>
+                <div class="feat-info">
+                  <h4>Live Kitchen Order Pipeline</h4>
+                  <p>Kanban-style tracking for chefs and waitstaff transitioning orders: New &rarr; Preparing &rarr; Ready.</p>
+                </div>
+              </div>
+              <div class="feat-box">
+                <div class="feat-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div class="feat-info">
+                  <h4>Automated GST Billing Engine</h4>
+                  <p>Instant invoice compilation with CGST (9%) + SGST (9%) auto-calculation, discounts, and print preview.</p>
+                </div>
+              </div>
+              <div class="feat-box">
+                <div class="feat-icon"><i class="fa-solid fa-user-lock"></i></div>
+                <div class="feat-info">
+                  <h4>Role-Based Access Control (RBAC)</h4>
+                  <p>Tailored interfaces for <strong>Admin</strong> (full telemetry), <strong>Waiter</strong> (orders &amp; tables), and <strong>Kitchen Staff</strong> (prep view).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flagship-actions">
+              <a href="#contact" class="btn btn-primary" id="flagship-discuss-btn">
+                <i class="fa-solid fa-paper-plane"></i> Discuss This Project
+              </a>
+              <a href="assets/swasthik-resume.pdf" download="Swasthik_Nayak_Resume.pdf" class="btn btn-outline" id="flagship-cv-btn">
+                <i class="fa-solid fa-file-pdf"></i> View in CV
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Projects & Academic Modules -->
+        <div class="mini-projects-grid">
+          <div class="mini-project-card glass-panel" data-aos="fade-up">
+            <div class="mini-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="mini-content">
+              <h4>DSA Algorithm Visualizer &amp; Benchmark</h4>
+              <p>Python implementation of advanced algorithms (Trees, Dynamic Programming, Graphs) with time/space complexity analyzers.</p>
+              <div class="mini-tags">
+                <span>Python</span>
+                <span>IIT KGP Spec</span>
+                <span>Big-O</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-project-card glass-panel" data-aos="fade-up" data-aos-delay="100">
+            <div class="mini-icon"><i class="fa-solid fa-code-compare"></i></div>
+            <div class="mini-content">
+              <h4>Interactive Developer CLI &amp; Portfolio</h4>
+              <p>State-of-the-art interactive web terminal, theme switcher engine, audio synthesis, and glassmorphic micro-interactions.</p>
+              <div class="mini-tags">
+                <span>Vanilla JS</span>
+                <span>CSS Variables</span>
+                <span>Web Audio API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-project-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+            <div class="mini-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="mini-content">
+              <h4>Relational Database Schema &amp; RBAC Auth</h4>
+              <p>Normalized multi-user schema with session tokens, audit logging, and automated billing generation.</p>
+              <div class="mini-tags">
+                <span>DBMS</span>
+                <span>RBAC Security</span>
+                <span>SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section certifications-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-solid fa-award"></i> VERIFIED CREDENTIALS</span>
+          <h2 class="section-title">Prestigious <span class="gradient-text">Certifications</span></h2>
+          <p class="section-desc">Honored with the Elite Medal from premier institute IIT Kharagpur for mastery in computational algorithms.</p>
+        </div>
+
+        <div class="certification-showcase-card glass-panel" data-aos="fade-up">
+          <div class="cert-credential-card">
+            <div class="cert-card-inner">
+              <div class="cert-crest-header">
+                <div class="cert-institute-badge">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <span>IIT KHARAGPUR</span>
+                </div>
+                <div class="nptel-verified-tag">
+                  <i class="fa-solid fa-circle-check"></i> Verified NPTEL
+                </div>
+              </div>
+
+              <div class="cert-medal-graphic">
+                <div class="medal-ribbon"></div>
+                <div class="medal-disc">
+                  <i class="fa-solid fa-medal"></i>
+                  <span class="medal-disc-title">ELITE</span>
+                  <span class="medal-stars">★ ★ ★ ★ ★</span>
+                </div>
+              </div>
+
+              <div class="cert-credential-body">
+                <h4 class="credential-course">Data Structures &amp; Algorithms</h4>
+                <p class="credential-lang"><i class="fa-brands fa-python"></i> Python Specialization</p>
+                <div class="credential-pill">
+                  <span class="pill-dot"></span>
+                  <span>Elite Honor Credential</span>
+                </div>
+              </div>
+
+              <div class="cert-footer-seal">
+                <div class="seal-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="seal-text">
+                  <small>Ministry of Education</small>
+                  <strong>Govt. of India Recognized</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-info-column">
+            <div class="cert-header-meta">
+              <span class="cert-issuer"><i class="fa-solid fa-building-columns"></i> IIT Kharagpur &bull; NPTEL</span>
+              <span class="cert-year"><i class="fa-solid fa-calendar-check"></i> Elite Certified</span>
+            </div>
+
+            <h3 class="cert-name">Data Structures and Algorithms in Python</h3>
+            <p class="cert-desc">
+              Awarded the prestigious <strong>Elite Medal</strong> by <strong>Indian Institute of Technology (IIT) Kharagpur</strong> via the National Programme on Technology Enhanced Learning (NPTEL). Rigorous evaluation covering asymptotic complexity analysis, linear and non-linear data structures, searching/sorting algorithms, recursion, and graph theory in Python.
+            </p>
+
+            <div class="cert-topics-grid">
+              <div class="cert-topic-item"><i class="fa-solid fa-check"></i> Asymptotic Notation &amp; Big-O Complexity</div>
+              <div class="cert-topic-item"><i class="fa-solid fa-check"></i> Binary Search Trees &amp; AVL Balancing</div>
+              <div class="cert-topic-item"><i class="fa-solid fa-check"></i> Graph Algorithms (BFS, DFS, Dijkstra)</div>
+              <div class="cert-topic-item"><i class="fa-solid fa-check"></i> Divide &amp; Conquer, Dynamic Programming</div>
+              <div class="cert-topic-item"><i class="fa-solid fa-check"></i> Pythonic Memory Model &amp; Data Structs</div>
+              <div class="cert-topic-item"><i class="fa-solid fa-check"></i> Stacks, Queues, Heaps &amp; Priority Queues</div>
+            </div>
+
+            <div class="cert-footer-meta">
+              <div class="cert-stat">
+                <span class="cs-label">Issuing Authority</span>
+                <span class="cs-value">IIT Kharagpur / Ministry of Education</span>
+              </div>
+              <div class="cert-stat">
+                <span class="cs-label">Recognition Grade</span>
+                <span class="cs-value grade-highlight">Elite Honor Medal 🏅</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & INTERNSHIPS -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-solid fa-briefcase"></i> INDUSTRY EXPOSURE</span>
+          <h2 class="section-title">Internships &amp; <span class="gradient-text">Practical Experience</span></h2>
+          <p class="section-desc">Hands-on application of modern web technologies, responsive interface development, and UI/UX engineering.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Internship Card -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Web Development Intern</h3>
+                  <span class="company-name"><i class="fa-regular fa-building"></i> Industry Internship</span>
+                </div>
+                <span class="timeline-date-badge"><i class="fa-regular fa-calendar"></i> 2025</span>
+              </div>
+
+              <div class="timeline-body">
+                <ul class="experience-bullets">
+                  <li>
+                    <i class="fa-solid fa-chevron-right bullet-icon"></i>
+                    <span>Engineered high-performance, responsive front-end interfaces utilizing <strong>semantic HTML5, modern CSS3</strong>, and <strong>vanilla JavaScript (ES6+)</strong>.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right bullet-icon"></i>
+                    <span>Gained in-depth knowledge of <strong>UI/UX Design</strong> principles, responsive breakpoint design, and cross-browser consistency.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-chevron-right bullet-icon"></i>
+                    <span>Collaborated on component-driven interface layouts, clean DOM interactions, and performance optimization for faster page load times.</span>
+                  </li>
+                </ul>
+
+                <div class="exp-tech-stack">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript (ES6+)</span>
+                  <span class="tag">UI/UX Design</span>
+                  <span class="tag">Responsive Web</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> ACADEMIC ODYSSEY</span>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Qualifications</span></h2>
+          <p class="section-desc">Strong foundation in Computer Applications and foundational science from esteemed educational institutions.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- MCA -->
+          <div class="edu-card glass-panel" data-aos="fade-up">
+            <div class="edu-year-col">
+              <span class="edu-year-badge">2025 &ndash; 2027</span>
+              <span class="edu-status-pill in-progress">Current</span>
+            </div>
+            <div class="edu-main-col">
+              <div class="edu-badge-tag"><i class="fa-solid fa-graduation-cap"></i> Post Graduate</div>
+              <h3 class="edu-degree">Masters of Computer Applications (MCA)</h3>
+              <h4 class="edu-institution"><i class="fa-solid fa-landmark"></i> Poornaprajna Institute of Management (PIM)</h4>
+              <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Udupi, Karnataka</p>
+              <p class="edu-desc">
+                Focusing on scalable backend frameworks, advanced database management systems (DBMS), cloud computing, and advanced software engineering methodologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- BCA / BSc Computer Science -->
+          <div class="edu-card glass-panel" data-aos="fade-up" data-aos-delay="100">
+            <div class="edu-year-col">
+              <span class="edu-year-badge">2023 &ndash; 2025</span>
+              <span class="edu-status-pill completed">Completed</span>
+            </div>
+            <div class="edu-main-col">
+              <div class="edu-badge-tag"><i class="fa-solid fa-user-graduate"></i> Under Graduate</div>
+              <h3 class="edu-degree">Bachelor of Computer Science</h3>
+              <h4 class="edu-institution"><i class="fa-solid fa-landmark"></i> Alvas Degree College</h4>
+              <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Moodubidre, Karnataka</p>
+              <p class="edu-desc">
+                Studied Computer Science fundamentals, Object-Oriented Programming, Data Structures, Operating Systems, Web Technologies, and Database Systems. Served simultaneously as Cultural Secretary for 3 consecutive years.
+              </p>
+            </div>
+          </div>
+
+          <!-- PUC -->
+          <div class="edu-card glass-panel" data-aos="fade-up" data-aos-delay="200">
+            <div class="edu-year-col">
+              <span class="edu-year-badge">2020 &ndash; 2022</span>
+              <span class="edu-status-pill completed">Completed</span>
+            </div>
+            <div class="edu-main-col">
+              <div class="edu-badge-tag"><i class="fa-solid fa-school"></i> Pre-University</div>
+              <h3 class="edu-degree">Pre-University Course (PUC)</h3>
+              <h4 class="edu-institution"><i class="fa-solid fa-landmark"></i> Govt PU College</h4>
+              <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Karkala, Karnataka</p>
+              <p class="edu-desc">
+                Core scientific and mathematical foundations including analytical mathematics, logical reasoning, and computer concepts.
+              </p>
+            </div>
+          </div>
+
+          <!-- SSLC -->
+          <div class="edu-card glass-panel" data-aos="fade-up" data-aos-delay="300">
+            <div class="edu-year-col">
+              <span class="edu-year-badge">2019</span>
+              <span class="edu-status-pill completed">Completed</span>
+            </div>
+            <div class="edu-main-col">
+              <div class="edu-badge-tag"><i class="fa-solid fa-book-open"></i> Secondary School</div>
+              <h3 class="edu-degree">Secondary School Leaving Certificate (SSLC)</h3>
+              <h4 class="edu-institution"><i class="fa-solid fa-landmark"></i> S B M P M High School</h4>
+              <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Durga Tellaru, Karkala</p>
+              <p class="edu-desc">
+                Foundational schooling with strong academic performance in science, mathematics, and co-curricular programs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & ACTIVITIES SECTION -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-solid fa-trophy"></i> LEADERSHIP &amp; BEYOND</span>
+          <h2 class="section-title">Achievements &amp; <span class="gradient-text">Activities</span></h2>
+          <p class="section-desc">Demonstrated leadership, organizational agility, and dedication to social responsibility.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Cultural Secretary -->
+          <div class="achievement-card glass-panel" data-aos="fade-right">
+            <div class="achieve-icon-box gold">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-tag">3 Consecutive Years</span>
+              <h3 class="achieve-title">Cultural Secretary in Alvas</h3>
+              <p class="achieve-desc">
+                Elected and re-elected as Cultural Secretary at Alvas Degree College for 3 consecutive years. Spearheaded campus cultural festivals, managed budgets and logistics, led student committees of 50+ members, and organized talent showcases for thousands of attendees.
+              </p>
+              <div class="achieve-pills">
+                <span>Executive Leadership</span>
+                <span>Team Coordination</span>
+                <span>Public Speaking</span>
+                <span>Event Logistics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NSS Volunteer -->
+          <div class="achievement-card glass-panel" data-aos="fade-left">
+            <div class="achieve-icon-box emerald">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div class="achieve-content">
+              <span class="achieve-tag">1 Year Service</span>
+              <h3 class="achieve-title">NSS Volunteer (National Service Scheme)</h3>
+              <p class="achieve-desc">
+                Committed 1 year of continuous service as an active National Service Scheme (NSS) volunteer. Participated in community outreach camps, social development initiatives, environmental drives, and health awareness campaigns across local communities.
+              </p>
+              <div class="achieve-pills">
+                <span>Social Responsibility</span>
+                <span>Community Service</span>
+                <span>Disaster Support</span>
+                <span>Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME VIEWER & DOWNLOAD SECTION -->
+    <section id="resume-section" class="section resume-section">
+      <div class="container">
+        <div class="resume-cta-banner glass-panel" data-aos="zoom-in">
+          <div class="banner-content">
+            <span class="banner-badge"><i class="fa-solid fa-file-pdf"></i> Direct Document Access</span>
+            <h2 class="banner-title">Need a Formal Copy of My Resume?</h2>
+            <p class="banner-desc">
+              Download the official PDF resume extracted directly from my latest credentials, or preview it right here in your browser.
+            </p>
+            <div class="banner-btn-group">
+              <a href="assets/swasthik-resume.pdf" download="Swasthik_Nayak_Resume.pdf" class="btn btn-primary" id="btn-download-pdf-main">
+                <i class="fa-solid fa-download"></i> Download Resume (PDF)
+              </a>
+              <button class="btn btn-glass" id="btn-preview-pdf-main">
+                <i class="fa-solid fa-eye"></i> View PDF In Browser
+              </button>
+              <a href="mailto:swasthiknayak09@gmail.com?subject=Interview%20Opportunity%20-%20Swasthik%20Nayak" class="btn btn-ghost">
+                <i class="fa-solid fa-calendar-check"></i> Schedule an Interview
+              </a>
+            </div>
+          </div>
+          <div class="banner-preview-thumb" id="resume-thumb-trigger">
+            <div class="thumb-paper">
+              <div class="paper-header-skeleton"></div>
+              <div class="paper-line-skeleton"></div>
+              <div class="paper-line-skeleton short"></div>
+              <div class="paper-photo-skeleton">
+                <img src="assets/swasthik-profile.png" alt="Swasthik Preview" />
+              </div>
+              <div class="paper-line-skeleton"></div>
+              <div class="paper-line-skeleton"></div>
+              <span class="hover-view-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-subtitle"><i class="fa-solid fa-paper-plane"></i> LET'S CONNECT</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-desc">I am actively exploring entry-level Software Engineer roles, Full-Stack developer positions, and MCA internship opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details Cards -->
+          <div class="contact-cards-col" data-aos="fade-right">
+            <!-- Email Card -->
+            <div class="contact-info-card glass-panel" id="copy-email-card">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="ci-details">
+                <span class="ci-label">Email Address</span>
+                <a href="mailto:swasthiknayak09@gmail.com" class="ci-value">swasthiknayak09@gmail.com</a>
+              </div>
+              <button class="ci-copy-btn" data-copy="swasthiknayak09@gmail.com" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-info-card glass-panel" id="copy-phone-card">
+              <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="ci-details">
+                <span class="ci-label">Phone &amp; WhatsApp</span>
+                <a href="tel:+918197194701" class="ci-value">+91 8197194701</a>
+              </div>
+              <button class="ci-copy-btn" data-copy="+918197194701" title="Copy Phone Number">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-info-card glass-panel">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="ci-details">
+                <span class="ci-label">Address &amp; Location</span>
+                <span class="ci-value address-val">Mahalaxmi Nilaya, Ashwattakatte Near Govt School, Durga Tellaru, Karkala, Udupi, Karnataka - 574104</span>
+              </div>
+            </div>
+
+            <!-- Quick WhatsApp Direct CTA -->
+            <div class="whatsapp-direct-card glass-panel">
+              <div class="wa-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="wa-content">
+                <h4>Instant WhatsApp Connection</h4>
+                <p>Chat directly with me on WhatsApp for immediate conversations.</p>
+              </div>
+              <a href="https://wa.me/918197194701?text=Hi%20Swasthik,%20I%20am%20interested%20in%20discussing%20an%20opportunity%20with%20you!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-col glass-panel" data-aos="fade-left">
+            <h3 class="form-title">Send Me a Direct Message</h3>
+            <p class="form-sub">Fill out the details below and I will get back to you promptly.</p>
+
+            <form id="portfolio-contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="contact-name" name="name" required placeholder="e.g. John Doe / Recruiter Name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Work / Personal Email <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="contact-email" name="email" required placeholder="e.g. recruiter@company.com" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag"></i>
+                  <input type="text" id="contact-subject" name="subject" placeholder="e.g. Software Engineer Role / Project Inquiry" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-message"></i>
+                  <textarea id="contact-message" name="message" rows="5" required placeholder="Write your message, project brief, or interview details..."></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RECRUITER INTERACTIVE TERMINAL MODAL -->
+  <div id="terminal-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-container terminal-container glass-panel" role="dialog" aria-labelledby="terminal-title">
+      <div class="terminal-bar">
+        <div class="terminal-dots">
+          <span class="dot dot-close" id="term-close-dot"></span>
+          <span class="dot dot-minimize"></span>
+          <span class="dot dot-maximize"></span>
+        </div>
+        <div class="terminal-title" id="terminal-title">
+          <i class="fa-solid fa-terminal"></i> swasthik@portfolio: ~ (bash CLI v2.4)
+        </div>
+        <button class="terminal-close-btn" id="close-terminal-btn" aria-label="Close terminal">&times;</button>
+      </div>
+
+      <div class="terminal-body" id="terminal-body">
+        <div class="terminal-welcome">
+          <p class="welcome-ascii">
+            ____                     _   _     _ _      _   _             _    <br>
+           / ___|_      ____ _ ___| |_| |__ (_) | __ | \ | | __ _ _   _| | __<br>
+           \___ \ \ /\ / / _` / __| __| '_ \| | |/ / |  \| |/ _` | | | | |/ /<br>
+            ___) \ V  V / (_| \__ \ |_| | | | |   &lt;  | |\  | (_| | |_| |   &lt; <br>
+           |____/ \_/\_/ \__,_|___/\__|_| |_|_|_|\_\ |_| \_|\__,_|\__, |_|\_\<br>
+                                                                  |___/       
+          </p>
+          <p class="term-msg">Welcome to Swasthik Nayak's Interactive Portfolio Terminal!</p>
+          <p class="term-help-hint">Type <span class="t-cmd">help</span> to view available commands or press <span class="t-cmd">Tab</span> for auto-completion.</p>
+        </div>
+
+        <div id="terminal-history"></div>
+
+        <div class="terminal-input-row">
+          <span class="term-prompt">swasthik@developer:~$</span>
+          <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="type 'help'..." autofocus />
+        </div>
+      </div>
+
+      <div class="terminal-quick-buttons">
+        <button class="t-qbtn" data-cmd="help">help</button>
+        <button class="t-qbtn" data-cmd="skills">skills</button>
+        <button class="t-qbtn" data-cmd="projects">projects</button>
+        <button class="t-qbtn" data-cmd="nptel">nptel</button>
+        <button class="t-qbtn" data-cmd="education">education</button>
+        <button class="t-qbtn" data-cmd="contact">contact</button>
+        <button class="t-qbtn" data-cmd="clear">clear</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME PDF VIEWER MODAL -->
+  <div id="resume-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-container resume-modal-box glass-panel" role="dialog" aria-labelledby="resume-viewer-title">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge"><i class="fa-solid fa-file-pdf"></i> PDF Viewer</span>
+          <h3 id="resume-viewer-title">Swasthik Nayak &mdash; Resume</h3>
+        </div>
+        <div class="resume-modal-controls">
+          <a href="assets/swasthik-resume.pdf" download="Swasthik_Nayak_Resume.pdf" class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <button class="modal-close-btn" id="close-resume-modal-btn" aria-label="Close resume viewer">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body resume-iframe-wrap">
+        <iframe src="assets/swasthik-resume.pdf" id="resume-iframe" title="Resume PDF View"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING ACTION BUTTONS (Back to top) -->
+  <button id="back-to-top-btn" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="brand-bracket">&lt;</span>
+            <span class="brand-name">Swasthik</span>
+            <span class="brand-dot">.</span>
+            <span class="brand-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            MCA Candidate &amp; Full-Stack Software Developer &bull; IIT Kharagpur Elite Medalist in DSA.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <span class="footer-heading">Quick Links</span>
+          <div class="footer-links-grid">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">RMS Project</a>
+            <a href="#experience">Internships</a>
+            <a href="#certifications">IIT KGP Elite</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-connect">
+          <span class="footer-heading">Direct Contact</span>
+          <p><i class="fa-solid fa-envelope"></i> swasthiknayak09@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 8197194701</p>
+          <p><i class="fa-solid fa-location-dot"></i> Karkala, Udupi, Karnataka, India</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Swasthik Nayak. All rights reserved. Crafted with precision &amp; passion.</p>
+        <div class="footer-social-links">
+          <a href="mailto:swasthiknayak09@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://wa.me/918197194701" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
